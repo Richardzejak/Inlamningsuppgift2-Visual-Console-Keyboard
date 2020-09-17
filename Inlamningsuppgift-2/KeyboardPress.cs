@@ -6,7 +6,7 @@ namespace Inlamningsuppgift_2
 {
     public class KeyboardPress
     {
-        public void ChangeTextColor(string letter, int x, int y, int freq) //handles keyboard presses with information from keypress events in main structure
+        public static void ChangeTextColor(string letter, int x, int y, int freq) //handles keyboard presses with information from keypress events in main structure
         {
             Console.ForegroundColor = ConsoleColor.Green;
 

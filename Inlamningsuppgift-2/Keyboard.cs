@@ -6,7 +6,7 @@ namespace Inlamningsuppgift_2
 {
     public class Keyboard //creates keyboard string and draws it during construction
     {
-        public string keyboardString = @"
+        public static string keyboardString = @"
 
 
          ____    _______________________   _______________________   _______________________    _________________
@@ -23,10 +23,5 @@ namespace Inlamningsuppgift_2
         |_|__ _|_____|_____|_____|_____|_____|_____|_____|_____|_____|_____|_____|_____|_____|  _____|_____|_____  |_____|_____|_____| Ent |
         | Ctrl |  Fn  | Win | Alt  |_____________________________| Alt  | N/A  | Win  | Ctrl | |  <  | \_/ |  >  | | 0         | Del |     |
         |______|______|_____|______|_____________________________|______|______|______|______| |_____|_____|_____| |___________|_____|_____|";
-
-        public Keyboard()
-            {
-            Console.WriteLine(keyboardString); //draws keyboard on construction
-            }
     }
 }

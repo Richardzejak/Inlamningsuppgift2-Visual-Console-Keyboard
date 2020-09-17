@@ -6,7 +6,7 @@ namespace Inlamningsuppgift_2
 {
     public class CheckWhichKey
     {
-        public void CheckWhichKeyMethod()
+        public static void CheckWhichKeyMethod()
         { 
 
         ConsoleKeyInfo key = Console.ReadKey(); // creating key variable thats equal to key pressed
