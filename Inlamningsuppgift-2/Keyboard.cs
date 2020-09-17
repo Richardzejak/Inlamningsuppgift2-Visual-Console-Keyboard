@@ -6,7 +6,7 @@ namespace Inlamningsuppgift_2
 {
     public class Keyboard
     {
-        string keyboard = @"
+        public string keyboardString = @"
 
 
           ____    _________________________________________________________________________     _________________
@@ -26,7 +26,7 @@ namespace Inlamningsuppgift_2
 
         public Keyboard()
             {
-            Console.WriteLine(keyboard);
+            Console.WriteLine(keyboardString);
             }
     }
 }
