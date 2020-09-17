@@ -9,15 +9,12 @@ class Program
     {
         Console.SetWindowSize(150, 20); // Resize console window
 
-        Keyboard keyboard = new Keyboard(); //creating keyboard object from class and prints it from the constructor
-
-        CheckWhichKey checkWhichKey = new CheckWhichKey();
         //ConsoleKeyInfo key = Console.ReadKey(); // creating key variable thats equal to key pressed
         int x;
         int y;
         char letter;
 
-
+        Console.WriteLine(Keyboard.keyboardString); //draws keyboard on construction
 
 
         Console.WriteLine("");
@@ -29,7 +26,7 @@ class Program
             Console.SetCursorPosition(x, y);
             Console.Write(letter);
 
-            checkWhichKey.CheckWhichKeyMethod();
+            CheckWhichKey.CheckWhichKeyMethod();
         }
     }
 }
