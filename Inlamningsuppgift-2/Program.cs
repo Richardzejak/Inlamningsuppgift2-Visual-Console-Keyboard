@@ -5,6 +5,8 @@ class Program
 {
     static void Main()
     {
+        Console.SetWindowSize(150, 20); // Resize console window
+
         Keyboard keyboard = new Keyboard(); //creating keyboard object from class and prints it from the constructor
         
 
