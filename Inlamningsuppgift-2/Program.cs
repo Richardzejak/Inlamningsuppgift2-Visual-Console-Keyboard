@@ -13,20 +13,42 @@ class Program
         int x;
         int y;
         char letter;
+        int menuChoice;
 
-        Console.WriteLine(Keyboard.keyboardString); //draws keyboard on construction
-
-
-        Console.WriteLine("");
-        while (true) // infinite loop
+        while (true)
         {
-            letter = ' ';
-            x = 0;
-            y = 0;
-            Console.SetCursorPosition(x, y);
-            Console.Write(letter);
+            Console.WriteLine(@"Hello and welcome to my keyboard application, this app lets you see which button you are pressing 
+and also Beep some different kind of sounds depending on which button you press,
+Write ""1"" to start use the keyboard
+Write ""2"" to play a random tone of beeps.
+");
+            menuChoice = Convert.ToInt32(Console.ReadLine());
 
-            CheckWhichKey.CheckWhichKeyMethod();
+            if (menuChoice == 1)
+            {
+                Console.Clear();
+                Console.WriteLine(Keyboard.keyboardString); //draws keyboard on construction
+
+                Console.WriteLine("");
+                while (true) // infinite loop
+                {
+                    letter = ' ';
+                    x = 0;
+                    y = 0;
+                    Console.SetCursorPosition(x, y);
+                    Console.Write(letter);
+
+                    CheckWhichKey.CheckWhichKeyMethod();
+                }
+            }
+            if (menuChoice == 2)
+            {
+                RandomTones.RandomTonePlayer();
+                Console.Clear();
+            }
+
         }
+
+
     }
 }
