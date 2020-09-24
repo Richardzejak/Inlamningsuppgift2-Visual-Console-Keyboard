@@ -8,7 +8,7 @@ namespace Inlamningsuppgift_2
     {
         public static void CheckWhichKeyMethod()
         { 
-
+            
         ConsoleKeyInfo key = Console.ReadKey(); // creating key variable thats equal to key pressed
 
             switch (key.Key) // checks key press and sends key and coords to KeyboardPress class
@@ -55,15 +55,12 @@ namespace Inlamningsuppgift_2
                 case (ConsoleKey.PrintScreen):
                     KeyboardPress.ChangeTextColor("Ptrsc", 96, 4, 150);
                     break;
-               // case (ConsoleKey.Scrolllock):
-               //     KeyboardPress.ChangeTextColor("S", 25, 11, 200);
-               //     break;
                 case (ConsoleKey.Pause):
                     KeyboardPress.ChangeTextColor("Pause", 107, 4, 250);
                     break;
-             //   case (ConsoleKey.§):
-              //      KeyboardPress.ChangeTextColor("W", 24, 9, 100);
-              //      break;
+                case (ConsoleKey.Oem5):
+                    KeyboardPress.ChangeTextColor("½", 11, 7, 100);
+                    break;
                 case (ConsoleKey.D1):
                     KeyboardPress.ChangeTextColor("1", 16, 7, 150);
                     break;
@@ -97,7 +94,9 @@ namespace Inlamningsuppgift_2
                 case (ConsoleKey.OemPlus):
                     KeyboardPress.ChangeTextColor("+", 76, 7, 250);
                     break;
-                    // saknas en
+                case (ConsoleKey.Oem4):
+                    KeyboardPress.ChangeTextColor("´", 80, 7, 250);
+                    break;
                 case (ConsoleKey.Backspace):
                     KeyboardPress.ChangeTextColor("<---", 86, 7, 150);
                     break;
@@ -147,9 +146,9 @@ namespace Inlamningsuppgift_2
                 case (ConsoleKey.Oem6):
                     KeyboardPress.ChangeTextColor("Å", 78, 9, 100);
                     break;
-                //  case (ConsoleKey.):
-                //    KeyboardPress.ChangeTextColor("A", 19, 11, 150);
-                //  break;
+                  case (ConsoleKey.Oem1):
+                    KeyboardPress.ChangeTextColor("¨", 84, 9, 150);
+                  break;
                 case (ConsoleKey.Enter):
                     KeyboardPress.ChangeTextColor("<--/", 88, 10, 200);
                     break;
@@ -162,9 +161,6 @@ namespace Inlamningsuppgift_2
                 case (ConsoleKey.PageDown):
                     KeyboardPress.ChangeTextColor("PgDwn", 108, 9, 150);
                     break;
-              //CAPS  case (ConsoleKey.):
-              //      KeyboardPress.ChangeTextColor("A", 19, 11, 150);
-              //      break;
                 case (ConsoleKey.A):
                     KeyboardPress.ChangeTextColor("A", 19, 11, 250);
                     break;
@@ -192,19 +188,18 @@ namespace Inlamningsuppgift_2
                 case (ConsoleKey.L):
                     KeyboardPress.ChangeTextColor("L", 67, 11, 250);
                     break;
-               // case (ConsoleKey.):
-                 //   KeyboardPress.ChangeTextColor("D", 31, 11, 250);
-                   // Ö break;
-                   // '
-             //   case (ConsoleKey.H):
-               //     KeyboardPress.ChangeTextColor("W", 24, 9, 100);
-                 //'   break;
-             //SHIFT   case (ConsoleKey.S):
-                    //KeyboardPress.ChangeTextColor("A", 19, 11, 150);
-                    //break;
-              //<  case (ConsoleKey.<):
-                 //   KeyboardPress.ChangeTextColor("S", 25, 11, 200);
-                   // break;
+                case (ConsoleKey.Oem3):
+                    KeyboardPress.ChangeTextColor("Ö", 73, 11, 250);
+                    break;
+                case (ConsoleKey.Oem7):
+                    KeyboardPress.ChangeTextColor("Ä", 79, 11, 100);
+                    break;
+                case (ConsoleKey.Oem2):
+                    KeyboardPress.ChangeTextColor("'", 85, 11, 150);
+                    break;
+                case (ConsoleKey.Oem102):
+                    KeyboardPress.ChangeTextColor("<", 18, 13, 150);
+                    break;
                 case (ConsoleKey.Z):
                     KeyboardPress.ChangeTextColor("Z", 24, 13, 250);
                     break;
@@ -235,33 +230,15 @@ namespace Inlamningsuppgift_2
                 case (ConsoleKey.OemMinus):
                     KeyboardPress.ChangeTextColor("-", 78, 13, 200);
                     break;
-                //rightshift  case (ConsoleKey.L):
-                //       KeyboardPress.ChangeTextColor("D", 31, 11, 250);
-                //      break;
-                //LCTRL  case (ConsoleKey.):
-                //      KeyboardPress.ChangeTextColor("D", 31, 11, 250);
-                //     break;
                 case (ConsoleKey.LeftWindows):
                     KeyboardPress.ChangeTextColor("Win", 24, 15, 100);
                     break;
-              //Lalt  case (ConsoleKey.):
-               //     KeyboardPress.ChangeTextColor("A", 19, 11, 150);
-               //     break;
                 case (ConsoleKey.Spacebar):
                     KeyboardPress.ChangeTextColor("_____________________________", 36, 15, 200);
                     break;
-                //RALT  case (ConsoleKey.L):
-                //      KeyboardPress.ChangeTextColor("D", 31, 11, 250);
-                //      break;
                 case (ConsoleKey.RightWindows):
-                    KeyboardPress.ChangeTextColor("Win", 80, 15, 250);
+                    KeyboardPress.ChangeTextColor("Win", 81, 15, 250);
                     break;
-                //skip?  case (ConsoleKey.H):
-                //      KeyboardPress.ChangeTextColor("W", 24, 9, 100);
-                //      break;
-                //Rctrl  case (ConsoleKey.J):
-                //      KeyboardPress.ChangeTextColor("A", 19, 11, 150);
-                //      break;
                 case (ConsoleKey.UpArrow):
                     KeyboardPress.ChangeTextColor("^", 104, 13, 150);
                     break;
@@ -274,19 +251,15 @@ namespace Inlamningsuppgift_2
                 case (ConsoleKey.RightArrow):
                     KeyboardPress.ChangeTextColor(">", 110, 15, 150);
                     break;
-
-              //NUM LOCK  case (ConsoleKey.):
-              //      KeyboardPress.ChangeTextColor("A", 19, 11, 150);
-              //      break;
-               //  / case (ConsoleKey.):
-               //     KeyboardPress.ChangeTextColor("S", 25, 11, 200);
-                //    break;
+                case (ConsoleKey.Divide):
+                    KeyboardPress.ChangeTextColor("/", 124, 7, 200);
+                    break;
                 case (ConsoleKey.Multiply):
                     KeyboardPress.ChangeTextColor("*", 130, 7, 250);
                     break;
-             // numpad minus case (ConsoleKey.): // fel knapp
-               //     KeyboardPress.ChangeTextColor("-", 136, 7, 150);
-                 //   break;
+                case (ConsoleKey.Subtract):
+                    KeyboardPress.ChangeTextColor("-", 136, 7, 150);
+                    break;
                 case (ConsoleKey.NumPad7):
                     KeyboardPress.ChangeTextColor("7", 118, 9, 150);
                     break;
@@ -296,10 +269,9 @@ namespace Inlamningsuppgift_2
                 case (ConsoleKey.NumPad9):
                     KeyboardPress.ChangeTextColor("9", 130, 9, 250);
                     break;
-               // case (ConsoleKey.OemPlus):
-                //    KeyboardPress.ChangeTextColor("+", 136, 10, 250);
-                  //  break;
-
+                case (ConsoleKey.Add):
+                    KeyboardPress.ChangeTextColor("+", 136, 10, 250);
+                    break;
                 case (ConsoleKey.NumPad4):
                     KeyboardPress.ChangeTextColor("4", 118, 11, 150);
                     break;
@@ -310,23 +282,20 @@ namespace Inlamningsuppgift_2
                     KeyboardPress.ChangeTextColor("6", 130, 11, 150);
                     break;
                 case (ConsoleKey.NumPad1):
-                    KeyboardPress.ChangeTextColor("1", 118, 11, 150);
+                    KeyboardPress.ChangeTextColor("1", 118, 13, 150);
                     break;
                 case (ConsoleKey.NumPad2):
-                    KeyboardPress.ChangeTextColor("2", 124, 11, 200);
+                    KeyboardPress.ChangeTextColor("2", 124, 13, 200);
                     break;
                 case (ConsoleKey.NumPad3):
-                    KeyboardPress.ChangeTextColor("3", 130, 11, 250);
+                    KeyboardPress.ChangeTextColor("3", 130, 13, 250);
                     break;
-                // numpad entercase (ConsoleKey.Num):
-                //    KeyboardPress.ChangeTextColor("A", 19, 11, 150);
-                //    break;
                 case (ConsoleKey.NumPad0):
                     KeyboardPress.ChangeTextColor("0", 117, 15, 150);
                     break;
-             //numpad delete   case (ConsoleKey.:
-             //       KeyboardPress.ChangeTextColor("S", 25, 11, 200);
-             //       break;
+               case (ConsoleKey.Decimal):
+                    KeyboardPress.ChangeTextColor("Del", 129, 15, 200);
+                    break;
             }
         }
     }
