@@ -15,10 +15,11 @@ namespace Inlamningsuppgift_2
 
             while (true)
             {
-                Console.WriteLine(@"Hello and welcome to my keyboard application, this app lets you see which button you are pressing 
-and also Beep some different kind of sounds depending on which button you press,
-Write ""1"" to start use the keyboard
-Write ""2"" to play a random tone of beeps.
+                Console.WriteLine(@" Hello. This application indicates which buttons you are pressing.
+It also plays a melody by random generated tones.
+Choose mode.
+1. Keyboard press indicator
+2. Random generated melody.
 ");
                 try
                 {
