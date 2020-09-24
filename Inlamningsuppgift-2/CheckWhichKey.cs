@@ -1,18 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace Inlamningsuppgift_2
 {
     public class CheckWhichKey
     {
         public static void CheckWhichKeyMethod()
-        { 
-            
-        ConsoleKeyInfo key = Console.ReadKey(); // creating key variable thats equal to key pressed
+        {
+            ConsoleKeyInfo key = Console.ReadKey(); // creating key variable thats equal to key pressed
+            Thread.Sleep(200);
+            ConsoleKeyInfo second_key;
+
+            if (Console.KeyAvailable && key.Key == ConsoleKey.Escape)
+            {
+                second_key = Console.ReadKey();
+                if (second_key.Key == ConsoleKey.Q)
+                {
+                    Console.Clear();
+                    MainMenu.MainMenuChoice();
+                }
+            }
+
+            if (Console.KeyAvailable && key.Key == ConsoleKey.Q)
+            {
+                second_key = Console.ReadKey();
+                if (second_key.Key == ConsoleKey.Escape)
+                {
+                    Console.Clear();
+                    MainMenu.MainMenuChoice();
+                }
+            }
 
             switch (key.Key) // checks key press and sends key and coords to KeyboardPress class
-         {// 106 buttons
+            {// 106 buttons
                 case (ConsoleKey.Escape):
                     KeyboardPress.ChangeTextColor("Esc", 10, 4, 100);
                     break;
@@ -146,9 +168,9 @@ namespace Inlamningsuppgift_2
                 case (ConsoleKey.Oem6):
                     KeyboardPress.ChangeTextColor("Å", 78, 9, 100);
                     break;
-                  case (ConsoleKey.Oem1):
+                case (ConsoleKey.Oem1):
                     KeyboardPress.ChangeTextColor("¨", 84, 9, 150);
-                  break;
+                    break;
                 case (ConsoleKey.Enter):
                     KeyboardPress.ChangeTextColor("<--/", 88, 10, 200);
                     break;
@@ -293,7 +315,7 @@ namespace Inlamningsuppgift_2
                 case (ConsoleKey.NumPad0):
                     KeyboardPress.ChangeTextColor("0", 117, 15, 150);
                     break;
-               case (ConsoleKey.Decimal):
+                case (ConsoleKey.Decimal):
                     KeyboardPress.ChangeTextColor("Del", 129, 15, 200);
                     break;
             }

@@ -7,7 +7,7 @@ namespace Inlamningsuppgift_2
     public class Keyboard //creates keyboard string and draws it during construction
     {
         public static string keyboardString = @"
-            if you press Escape
+            Press Escape and ""Q"" at the same time to go back to Mainmenu
 
          ____    _______________________   _______________________   _______________________    _________________
         | Esc|  | F1  | F2  | F3  | F4  | |  F5 | F6  | F7  | F8  | | F9  | F10 | F11 | F12 |  |Prtsc|Scrlk|Pause|
