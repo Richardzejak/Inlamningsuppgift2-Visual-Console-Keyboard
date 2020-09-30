@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inlamningsuppgift-2", "Inlamningsuppgift-2\Inlamningsuppgift-2.csproj", "{C738EF00-15E7-43B9-97B6-D23F6633694C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inlamningsuppgift-2", "Inlamningsuppgift-2\Inlamningsuppgift-2.csproj", "{C738EF00-15E7-43B9-97B6-D23F6633694C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{64423D5B-95EE-4C10-8D63-A4A41C84F040}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C738EF00-15E7-43B9-97B6-D23F6633694C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C738EF00-15E7-43B9-97B6-D23F6633694C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C738EF00-15E7-43B9-97B6-D23F6633694C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64423D5B-95EE-4C10-8D63-A4A41C84F040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64423D5B-95EE-4C10-8D63-A4A41C84F040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64423D5B-95EE-4C10-8D63-A4A41C84F040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64423D5B-95EE-4C10-8D63-A4A41C84F040}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

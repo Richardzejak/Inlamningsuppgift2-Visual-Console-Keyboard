@@ -53,7 +53,7 @@ Choose mode.
                         Console.WriteLine("Input number was not in correct format please try again with either 1 or 2 \n");
                     }
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     Console.Clear();
                     Console.WriteLine("Input number was not in correct format please try again with either 1 or 2 \n");

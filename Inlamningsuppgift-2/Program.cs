@@ -2,13 +2,19 @@
 using System;
 using System.Drawing;
 using System.Security.Cryptography.X509Certificates;
+using System.IO;
 
-class Program
+public class Program
 {
     static void Main()
     {
         Console.SetWindowSize(150, 20); // Resize console window
 
         MainMenu.MainMenuChoice();
+    }
+
+    public static double Add(double x, double y)
+    {
+        return x + y;
     }
 }
