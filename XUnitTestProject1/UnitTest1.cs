@@ -1,3 +1,4 @@
+using Inlamningsuppgift_2;
 using System;
 using Xunit;
 
@@ -16,6 +17,14 @@ namespace XUnitTestProject1
 
             // Assert
             Assert.Equal(expected, actual);
+
+
+        }
+        [Fact]
+        public void Test2()
+        {
+            var sim = new WindowsInput.InputSimulator();
+            sim.Keyboard.KeyDown(WindowsInput.Native.VirtualKeyCode.VK_Q);
 
 
         }

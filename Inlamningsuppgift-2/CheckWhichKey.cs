@@ -35,6 +35,7 @@ namespace Inlamningsuppgift_2
 
             switch (key.Key) // checks key press and sends key and coords to KeyboardPress class
             {// 106 buttons
+
                 case (ConsoleKey.Escape):
                     KeyboardPress.ChangeTextColor("Esc", 10, 4, 100);
                     break;
